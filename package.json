@@ -1,0 +1,34 @@
+{
+  "name": "library-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js 8080",
+    "start": "node server.js 8080",
+    "db:create": "npx sequelize-cli db:create",
+    "db:drop": "npx sequelize-cli db:drop",
+    "up": "npx sequelize-cli db:migrate",
+    "undo": "npx sequelize-cli db:migrate:undo",
+    "undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "seed": "npx sequelize-cli db:seed:all",
+    "seed:undo": "npx sequelize-cli db:seed:undo",
+    "seed:undo:all": "npx sequelize-cli db:seed:undo:all",
+    "status": "npx sequelize-cli db:migrate:status"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.2",
+    "sequelize-cli": "^6.6.2"
+  }
+}
